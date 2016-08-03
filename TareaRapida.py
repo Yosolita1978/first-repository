@@ -1,14 +1,14 @@
 # encoding: utf-8
 
-l = range (1,101)
+l = range(1,101)
 
 
 for num in l:
     if num % 3 == 0 and num % 5 == 0:
-        print "FizzBuzz"
+        print "CracklePop"
     elif num % 5 == 0:
-        print "Buzz"
+        print "Pop"
     elif num % 3 == 0:
-        print "Fizz"
+        print "Crackle"
     else:
         print num
