@@ -20,18 +20,27 @@ def make_palindrome(s, k):
     >>> make_palindrome("0011",1)
     -1
 
+    >>> make_palindrome("378983",2)
+    '389983'
+
+    >>> make_palindrome("367873",2)
+    '378873'
+
     """
     new_word = ""
     x = 0
     y = len(s)-1
     count = 0
-    while x < y:
-        new_word = new_word + s[x]
 
-        if s[x] != s[y]:
+    while x < y:
+        if s[x] < s[y]:
+            new_word = new_word + s[y]
+            count = count +1
+        elif s[x] > s[y]:
+            new_word = new_word + s[x]
             count = count + 1
-            if s[x] < s[y]:
-                new_word = new_word.replace(s[x],s[y])
+        else:
+            new_word = new_word + s[x]            
 
         x = x + 1
         y = y - 1
