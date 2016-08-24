@@ -26,6 +26,9 @@ def make_palindrome(s, k):
     >>> make_palindrome("367873",2)
     '378873'
 
+    >>> make_palindrome("378873",0)
+    '378873'
+
     """
     new_word = ""
     x = 0
