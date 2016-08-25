@@ -77,7 +77,7 @@ class TestLinkedList(unittest.TestCase):
             self.list.__getitem__(2)
 
 
-    #@unittest.skip('Extra Challenge: pop method.')
+    @unittest.skip('Extra Challenge: pop method.')
     def test_pop(self):
         self.list.append("Prof. Plum")
         self.list.append("Mrs. Peacock")
@@ -93,13 +93,13 @@ class TestLinkedList(unittest.TestCase):
         self.assertTrue(new_length == 2)
 
 
-    #@unittest.skip('Extra Challenge: pop method.')
+    @unittest.skip('Extra Challenge: pop method.')
     def test_pop_empty_list(self):
         with self.assertRaises(IndexError):
             self.list.pop()
 
 
-    #@unittest.skip('Extra Challenge: __delitem__ method.')
+    @unittest.skip('Extra Challenge: __delitem__ method.')
     def test_delete(self):
         self.list.append("Prof. Plum")
         self.list.append("Mrs. Peacock")
@@ -117,7 +117,7 @@ class TestLinkedList(unittest.TestCase):
         self.assertTrue(new_length == 1)
 
 
-    #@unittest.skip('Extra Challenge: __delitem__ method.')
+    @unittest.skip('Extra Challenge: __delitem__ method.')
     def test_delete_value_not_in_list(self):
         self.list.append("Prof. Plum")
         self.list.append("Mrs. Peacock")
@@ -127,13 +127,13 @@ class TestLinkedList(unittest.TestCase):
             self.list.__delitem__(3)
 
 
-    #@unittest.skip('Extra Challenge: __delitem__ method.')
+    @unittest.skip('Extra Challenge: __delitem__ method.')
     def test_delete_empty_list(self):
         with self.assertRaises(IndexError):
             self.list.__delitem__(1)
 
 
-    #@unittest.skip('Extra Challenge: __delitem__ method.')
+    @unittest.skip('Extra Challenge: __delitem__ method.')
     def test_delete_next_reassignment(self):
         self.list.append("Prof. Plum")
         self.list.append("Mrs. White")

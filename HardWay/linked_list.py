@@ -1,3 +1,5 @@
+#Code from Stephan Alleyne and Cristina Rodriguez
+
 class Node(object):
 
     def __init__(self, data=None, next_node=None):
@@ -57,35 +59,3 @@ class LinkedList(object):
                 current = current.get_next()
 
     
-
-    def __delitem__(self, index):
-        current = self.head
-        previous = None
-        count = 0
-        if index >= self.__len__():
-            raise IndexError
-        elif index == 0:
-            self.head = current.get_next()
-        else:
-            while current:
-                if index == count:
-                    previous.set_next(current.get_next())
-                    return
-                else:
-                    previous = current
-                    current = current.get_next()
-                    count +=1
-
-    def pop(self):
-        current = self.head
-        if current == None:
-            raise IndexError()
-        else:
-            self.head = current.get_next()
-            return current
-                
-
-
-
-
-
