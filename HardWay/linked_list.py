@@ -54,7 +54,7 @@ class LinkedList(object):
         else:
             while current:
                 if index == count:
-                    return current
+                    return current.get_data()
                 count += 1
                 current = current.get_next()
 
